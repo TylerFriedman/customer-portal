@@ -1,18 +1,19 @@
-**Group members include:**
+## **Contributors**
+This project is developed as part of APDS7311:
 
-Matteo Pita -ST10024454
-
-Nicholas James Malan -ST10046014
-
-Reece Cunningham-ST10043367
-
-Shira Bome - ST10043352
-
-Tyler Friedman - ST10161340
+- **ST10024454** Matteo Pita  
+- **ST10161340** Tyler Friedman  
+- **ST10046014** Nicholas James Malan  
+- **ST10043367** Reece Cunningham  
+- **ST10043352** Shira Bome
 
 
-**YouTube Link:**
-[https://youtu.be/1MCwDIKGdKE?feature=shared](https://youtu.be/jFaIM0AB4lg)
+## YouTube Link:
+
+https://youtu.be/jFaIM0AB4lg
+
+## Link to our submission repository (action does not work here):
+https://github.com/VCSTDN/apds7311-part-2-UndeadRonin99.git
 
 ## Project Security and DevSecOps Evaluation
 
@@ -23,4 +24,3 @@ Tyler Friedman - ST10161340
 | **Securing Data in Transit with SSL** | - **HTTPS with SSL Certificates**: The server is configured to use SSL certificates, serving all traffic over HTTPS, which ensures encrypted data transmission. <br> - **HSTS Implementation**: HTTP Strict Transport Security (HSTS) is implemented through Helmet to enforce secure connections, even if a user attempts to connect via HTTP. <br> - **HTTP to HTTPS Redirection**: A middleware is added to automatically redirect all HTTP requests to HTTPS, preventing unencrypted access. |
 | **Protecting Against Attacks** | - **Multiple Security Tools Configured**: <br> 1. **Helmet** for setting secure HTTP headers, including CSP, to prevent attacks such as XSS. <br> 2. **Rate Limiting**: Rate limiters (`express-rate-limit`) are set globally and specifically on login and payment routes to prevent brute-force and DDoS attacks. <br> 3. **CSRF Protection**: CSRF tokens are implemented using `csurf` middleware to secure state-changing requests. <br> 4. **HPP Protection**: HTTP Parameter Pollution (HPP) is handled using `hpp` middleware, which ensures only valid parameters are processed. <br> 5. **Brute-Force Login Protection**: Rate limiting on the login route and account lockout mechanisms are set up. <br> - **Secure Cookie Settings**: Cookies are set with secure flags (`HttpOnly`, `Secure`, `SameSite`) to mitigate attacks such as CSRF and session hijacking. |
 | **DevSecOps Pipeline**         | - **Comprehensive DevSecOps Pipeline**: The pipeline uses GitHub Actions to automate tests, static code analysis, and secure build processes. <br> - **SonarCloud Integration**: The pipeline integrates **SonarCloud** for code quality and security analysis, with detailed configuration that includes project key, organization, and directories to analyze. <br> - **Multi-Step Deployment**: The pipeline includes multiple steps to ensure secure deployment, including `checkout`, environment setup (Node.js and Java), dependency installation, and security scanning. |
-
