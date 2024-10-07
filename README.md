@@ -1,8 +1,12 @@
 **Group members include:**
 Matteo Pita -ST10024454
+
 Nicholas James Malan -ST10046014
+
 Reece Cunningham-ST10043367
+
 Shira Bome - ST10043352
+
 Tyler Friedman - ST10161340
 
 
