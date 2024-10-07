@@ -3,7 +3,7 @@
 
 ## Project Security and DevSecOps Evaluation
 
-| **Marking Criteria**           | **Explanation of How Your Code Exceeds Standards**                                                                                     |
+| **Marking Criteria**           | **Explanation of How our Code Exceeds Standards**                                                                                     |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | **Password Security**          | - **Argon2 with Salting and Peppering**: Passwords are hashed using Argon2 (argon2id) with salts and a server-side pepper. This adds an extra layer of security, making the password significantly harder to crack. <br> - **Advanced Parameters**: Argon2 settings are fine-tuned (`memoryCost`, `timeCost`, `parallelism`) to increase computational cost, offering exceptional password protection. <br> - **Secure Password Policies**: Password complexity is enforced via strong RegEx, which includes uppercase, lowercase, numbers, and special characters. |
 | **Input Whitelisting**         | - **Comprehensive RegEx Patterns**: Inputs are validated using advanced Regular Expressions to ensure they only include expected characters (e.g., usernames, passwords, ID numbers). <br> - **Input Sanitization**: Fields are trimmed and sanitized using `express-validator` to escape potentially harmful characters, mitigating the risks of SQL injection and XSS. <br> - **Validation Across Multiple Fields**: Username, email, password, ID number, and account number are all validated and sanitized, ensuring a consistent and secure approach. |
